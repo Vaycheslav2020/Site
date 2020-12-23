@@ -692,6 +692,7 @@ button:focus, div:focus, input:focus, textarea:focus, video{
         position: relative;
         width: 30px;
         height: 20px;
+        z-index: 10;
     }
     .header__burger span {
         position: absolute;
@@ -751,11 +752,13 @@ button:focus, div:focus, input:focus, textarea:focus, video{
         transition: all 0.3s ease;
     }
     .menu__media_top.active{
-        top: 50px;
+        top: 0;
     }
     .nav__list{
         top: 0;
         flex-direction: column;
+        display: flex;
+        padding-top: 60px;
     }
     .nav__item{
         border-bottom: 1px solid rgb(255, 255, 255,0.85);
@@ -799,6 +802,35 @@ button:focus, div:focus, input:focus, textarea:focus, video{
     }
     .content__video{
         display: none;
+    }
+    .form__inp{
+        margin: 5px 0 auto;
+    }
+    .form__message
+    {
+        margin: 5px 0 auto;
+    }
+    .footer__links{
+        display: flex;
+        flex-direction: column;
+    }
+    .useful_content{
+        flex-direction: column;
+    }
+    .useful_item{
+        width: 100%;
+    }
+    .progress{
+        flex-direction: column;
+    }
+    .progress_item{
+        width: 100%;
+    }
+    .content__title{
+        font-size: 35px;
+    }
+    .content__descr{
+        font-size: 16px;
     }
 }
 @media (max-width: 643px){
